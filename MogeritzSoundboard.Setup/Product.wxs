@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi"><?define MogeritzSoundboardGUI_TargetDir=$(var.MogeritzSoundboardGUI.TargetDir)?>
+	<Product Id="*" Name="MogeritzSoundboard" Language="1033" Version="1.0.0.0" Manufacturer="MogeritzSoft" UpgradeCode="16ec533c-b63a-4069-9473-f76efe8c739c">
+		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+
+		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+    <MediaTemplate EmbedCab="yes" />
+
+		<Feature Id="ProductFeature" Title="MogeritzSoundboard" Level="1">
+			<ComponentGroupRef Id="ProductComponents" />
+			<ComponentGroupRef Id="Resources_files" />
+			<ComponentGroupRef Id="Properties_files" />
+      <ComponentGroupRef Id="Shortcuts" />
+		</Feature>
+  
+		<Binary Id="myAction" SourceFile="..\CustomAction\bin\Debug\CustomAction.CA.dll" />
+  
+		<CustomAction Id="myActionId1" BinaryKey="myAction" DllEntry="InstallVM" Execute="deferred" Impersonate="no" Return="check" />
+		<CustomAction Id="myActionId2" BinaryKey="myAction" DllEntry="SetRegistry" Execute="immediate" Impersonate="yes" Return="check" />
+    
+		<InstallExecuteSequence>
+      <Custom Action="myActionId1" Before="InstallFinalize">NOT Installed</Custom>
+      <Custom Action="myActionId2" After="InstallFinalize">NOT Installed</Custom>
+		</InstallExecuteSequence>
+
+	</Product>
+
+  
+    
+	<Fragment>
+		<Directory Id="TARGETDIR" Name="SourceDir">
+			<Directory Id="ProgramFilesFolder">
+				<Directory Id="INSTALLFOLDER" Name="MogeritzSoundboard">
+				  <Directory Id="Properties" Name="Properties" />
+				  <Directory Id="Resources" Name="Resources" />
+				</Directory>
+      </Directory>
+      <Directory Id="StartupFolder">
+      </Directory>
+    </Directory>
+	</Fragment>
+  
+	<Fragment>
+		<ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
+			<!-- TODO: Remove the comments around this Component element and the ComponentRef below in order to add resources to this installer. -->
+			<!-- <Component Id="ProductComponent"> -->
+				<!-- TODO: Insert files, registry keys, and other resources here. -->
+			<!-- </Component> -->
+			<Component Id="MogeritzSoundboardGUI.runtimeconfig.json" Guid="83a25ec8-ec5a-435a-81fa-65ea29ab5738">
+			  <File Id="MogeritzSoundboardGUI.runtimeconfig.json" Name="MogeritzSoundboardGUI.runtimeconfig.json" Source="$(var.MogeritzSoundboardGUI_TargetDir)MogeritzSoundboardGUI.runtimeconfig.json" />
+			</Component>
+			<Component Id="MogeritzSoundboardGUI.dll" Guid="35864915-3301-43e9-866d-5cd51cf902e9">
+			  <File Id="MogeritzSoundboardGUI.dll" Name="MogeritzSoundboardGUI.dll" Source="$(var.MogeritzSoundboardGUI_TargetDir)MogeritzSoundboardGUI.dll" />
+			</Component>
+      <Component Id="MogeritzSoundboardGUI.exe" Guid="35864925-3301-43e9-866d-5cd51cf902e9">
+        <File Id="MogeritzSoundboardGUI.exe" Name="MogeritzSoundboardGUI.exe" Source="$(var.MogeritzSoundboardGUI_TargetDir)MogeritzSoundboardGUI.exe" />
+      </Component>
+			<Component Id="MogeritzDefinitions.dll" Guid="26bfe859-bc80-4635-a7d5-a86dab2a194b">
+			  <File Id="MogeritzDefinitions.dll" Name="MogeritzDefinitions.dll" Source="$(var.MogeritzSoundboardGUI_TargetDir)MogeritzDefinitions.dll" />
+			</Component>
+			<Component Id="NAudio.Core.dll" Guid="1232bc5b-f301-4cbf-8cf0-c3501c01b99f">
+			  <File Id="NAudio.Core.dll" Name="NAudio.Core.dll" Source="$(var.MogeritzSoundboardGUI_TargetDir)NAudio.Core.dll" />
+			</Component>
+			<Component Id="NAudio.WinForms.dll" Guid="d0ba53fa-811c-4e78-885f-0ff144870472">
+			  <File Id="NAudio.WinForms.dll" Name="NAudio.WinForms.dll" Source="$(var.MogeritzSoundboardGUI_TargetDir)NAudio.WinForms.dll" />
+			</Component>
+			<Component Id="NAudio.WinMM.dll" Guid="d72768e2-3266-4d33-8d8b-f4b3a8f3b78d">
+			  <File Id="NAudio.WinMM.dll" Name="NAudio.WinMM.dll" Source="$(var.MogeritzSoundboardGUI_TargetDir)NAudio.WinMM.dll" />
+			</Component>
+			<Component Id="VmrapiDynWrap.dll" Guid="3dbf1320-1c5c-4060-930b-06c4e24a453e">
+			  <File Id="VmrapiDynWrap.dll" Name="VmrapiDynWrap.dll" Source="$(var.MogeritzSoundboardGUI_TargetDir)VmrapiDynWrap.dll" />
+			</Component>
+			<Component Id="NAudio.dll" Guid="7e5c733a-c3e5-4c42-8052-ef9fc687b69d">
+			  <File Id="NAudio.dll" Name="NAudio.dll" Source="$(var.MogeritzSoundboardGUI_TargetDir)NAudio.dll" />
+			</Component>
+			<Component Id="UnmanagedLibWrap.dll" Guid="cbc3af95-689d-41bc-baec-4ce1b5a4244c">
+			  <File Id="UnmanagedLibWrap.dll" Name="UnmanagedLibWrap.dll" Source="$(var.MogeritzSoundboardGUI_TargetDir)UnmanagedLibWrap.dll" />
+			</Component>
+			<Component Id="NAudio.Wasapi.dll" Guid="c9e333f0-75d2-4441-a8e2-d137dadc0b22">
+			  <File Id="NAudio.Wasapi.dll" Name="NAudio.Wasapi.dll" Source="$(var.MogeritzSoundboardGUI_TargetDir)NAudio.Wasapi.dll" />
+			</Component>
+		</ComponentGroup>
+	</Fragment>
+	<Fragment>
+	  <ComponentGroup Id="Resources_files" Directory="Resources">
+	    <Component Id="Resources_AppIcon.ico" Guid="890c2c43-f921-456e-8440-2aa6d13f0d48">
+	      <File Id="Resources_AppIcon.ico" Name="AppIcon.ico" Source="$(var.MogeritzSoundboardGUI_TargetDir)Resources\AppIcon.ico" />
+	    </Component>
+	  </ComponentGroup>
+	</Fragment>
+
+  <Fragment>
+    <ComponentGroup Id="Properties_files" Directory="Properties">
+      <Component Id="Properties_Settings.settings" Guid="5b2ce5b2-db5a-4e9a-9fa5-23716db7a667">
+        <File Id="Properties_Settings.settings" Name="Settings.settings" Source="$(var.MogeritzSoundboardGUI_TargetDir)Properties\Settings.settings" />
+      </Component>
+    </ComponentGroup>
+  </Fragment>
+
+  <Fragment>
+    <ComponentGroup Id="Shortcuts" Directory="StartupFolder">
+      <Component Id="StartUpAtStart" Guid="83a25ec8-ec5a-436a-81fa-65ea29ab5838" Win64="no" Permanent="yes" NeverOverwrite="yes">
+        <Shortcut Id="StartUpShortcut" Name="MogeritzSoundboard" WorkingDirectory="INSTALLFOLDER" Target="[INSTALLFOLDER]MogeritzSoundboardGUI.exe" IconIndex="0" Advertise="no" />
+        <RemoveFile Id="RemoveShortcut" Name="MogeritzSoundboard" On="uninstall" />
+        <RegistryValue Root="HKCU" Key="Software\MogeritzSoft\MogeritzSoundboard" Type="string" Value="[INSTALLFOLDER]MogeritzSoundboard.exe" KeyPath="yes" />
+      </Component>
+    </ComponentGroup>
+  </Fragment>
+  
+</Wix>

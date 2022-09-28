@@ -1,0 +1,2 @@
+Y:\Projekte\Soundboard\MogeritzSoundboard\MogeritzSoundboard.Setup\bin\Debug\MogeritzSoundboard.Setup.msi
+Y:\Projekte\Soundboard\MogeritzSoundboard\MogeritzSoundboard.Setup\bin\Debug\MogeritzSoundboard.Setup.wixpdb

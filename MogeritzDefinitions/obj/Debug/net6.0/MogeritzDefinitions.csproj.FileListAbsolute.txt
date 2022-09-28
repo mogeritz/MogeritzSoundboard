@@ -1,0 +1,12 @@
+Y:\Projekte\Soundboard\MogeritzSoundboard\MogeritzDefinitions\bin\Debug\net6.0\MogeritzDefinitions.deps.json
+Y:\Projekte\Soundboard\MogeritzSoundboard\MogeritzDefinitions\bin\Debug\net6.0\MogeritzDefinitions.dll
+Y:\Projekte\Soundboard\MogeritzSoundboard\MogeritzDefinitions\bin\Debug\net6.0\MogeritzDefinitions.pdb
+Y:\Projekte\Soundboard\MogeritzSoundboard\MogeritzDefinitions\obj\Debug\net6.0\MogeritzDefinitions.csproj.AssemblyReference.cache
+Y:\Projekte\Soundboard\MogeritzSoundboard\MogeritzDefinitions\obj\Debug\net6.0\MogeritzDefinitions.GeneratedMSBuildEditorConfig.editorconfig
+Y:\Projekte\Soundboard\MogeritzSoundboard\MogeritzDefinitions\obj\Debug\net6.0\MogeritzDefinitions.AssemblyInfoInputs.cache
+Y:\Projekte\Soundboard\MogeritzSoundboard\MogeritzDefinitions\obj\Debug\net6.0\MogeritzDefinitions.AssemblyInfo.cs
+Y:\Projekte\Soundboard\MogeritzSoundboard\MogeritzDefinitions\obj\Debug\net6.0\MogeritzDefinitions.csproj.CoreCompileInputs.cache
+Y:\Projekte\Soundboard\MogeritzSoundboard\MogeritzDefinitions\obj\Debug\net6.0\MogeritzDefinitions.dll
+Y:\Projekte\Soundboard\MogeritzSoundboard\MogeritzDefinitions\obj\Debug\net6.0\refint\MogeritzDefinitions.dll
+Y:\Projekte\Soundboard\MogeritzSoundboard\MogeritzDefinitions\obj\Debug\net6.0\MogeritzDefinitions.pdb
+Y:\Projekte\Soundboard\MogeritzSoundboard\MogeritzDefinitions\obj\Debug\net6.0\ref\MogeritzDefinitions.dll

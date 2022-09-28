@@ -1,0 +1,10 @@
+Y:\Projekte\Soundboard\MogeritzSoundboard\CustomAction\bin\Debug\CustomAction.dll
+Y:\Projekte\Soundboard\MogeritzSoundboard\CustomAction\bin\Debug\CustomAction.CA.dll
+Y:\Projekte\Soundboard\MogeritzSoundboard\CustomAction\bin\Debug\CustomAction.pdb
+Y:\Projekte\Soundboard\MogeritzSoundboard\CustomAction\bin\Debug\Microsoft.Deployment.WindowsInstaller.dll
+Y:\Projekte\Soundboard\MogeritzSoundboard\CustomAction\bin\Debug\Microsoft.Deployment.WindowsInstaller.xml
+Y:\Projekte\Soundboard\MogeritzSoundboard\CustomAction\obj\x86\Debug\CustomAction.csproj.AssemblyReference.cache
+Y:\Projekte\Soundboard\MogeritzSoundboard\CustomAction\obj\x86\Debug\CustomAction.csproj.CoreCompileInputs.cache
+Y:\Projekte\Soundboard\MogeritzSoundboard\CustomAction\obj\x86\Debug\CustomAction.csproj.CopyComplete
+Y:\Projekte\Soundboard\MogeritzSoundboard\CustomAction\obj\x86\Debug\CustomAction.dll
+Y:\Projekte\Soundboard\MogeritzSoundboard\CustomAction\obj\x86\Debug\CustomAction.pdb

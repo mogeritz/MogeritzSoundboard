@@ -1,0 +1,13 @@
+Y:\Projekte\Soundboard\MogeritzSoundboard\MogeritzSoundboardGUI\bin\Debug\net6.0-windows\MogeritzDefinitions.dll
+Y:\Projekte\Soundboard\MogeritzSoundboard\MogeritzSoundboardGUI\bin\Debug\net6.0-windows\MogeritzSoundboardGUI.dll
+Y:\Projekte\Soundboard\MogeritzSoundboard\MogeritzSoundboardGUI\bin\Debug\net6.0-windows\MogeritzSoundboardGUI.exe
+Y:\Projekte\Soundboard\MogeritzSoundboard\MogeritzSoundboardGUI\bin\Debug\net6.0-windows\MogeritzSoundboardGUI.runtimeconfig.json
+Y:\Projekte\Soundboard\MogeritzSoundboard\MogeritzSoundboardGUI\bin\Debug\net6.0-windows\NAudio.Core.dll
+Y:\Projekte\Soundboard\MogeritzSoundboard\MogeritzSoundboardGUI\bin\Debug\net6.0-windows\NAudio.dll
+Y:\Projekte\Soundboard\MogeritzSoundboard\MogeritzSoundboardGUI\bin\Debug\net6.0-windows\NAudio.Wasapi.dll
+Y:\Projekte\Soundboard\MogeritzSoundboard\MogeritzSoundboardGUI\bin\Debug\net6.0-windows\NAudio.WinForms.dll
+Y:\Projekte\Soundboard\MogeritzSoundboard\MogeritzSoundboardGUI\bin\Debug\net6.0-windows\NAudio.WinMM.dll
+Y:\Projekte\Soundboard\MogeritzSoundboard\MogeritzSoundboardGUI\bin\Debug\net6.0-windows\Properties\Settings.settings
+Y:\Projekte\Soundboard\MogeritzSoundboard\MogeritzSoundboardGUI\bin\Debug\net6.0-windows\Resources\AppIcon.ico
+Y:\Projekte\Soundboard\MogeritzSoundboard\MogeritzSoundboardGUI\bin\Debug\net6.0-windows\UnmanagedLibWrap.dll
+Y:\Projekte\Soundboard\MogeritzSoundboard\MogeritzSoundboardGUI\bin\Debug\net6.0-windows\VmrapiDynWrap.dll

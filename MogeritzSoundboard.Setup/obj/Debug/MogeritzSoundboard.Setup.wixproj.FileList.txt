@@ -1,0 +1,6 @@
+Y:\Projekte\Soundboard\MogeritzSoundboard\MogeritzSoundboard.Setup\bin\Debug\MogeritzSoundboard.Setup.msi
+Y:\Projekte\Soundboard\MogeritzSoundboard\MogeritzSoundboard.Setup\bin\Debug\MogeritzSoundboard.Setup.wixpdb
+obj\Debug\Product.wixobj
+obj\Debug\MogeritzSoundboard.Setup.wixproj.BindContentsFileListnull.txt
+obj\Debug\MogeritzSoundboard.Setup.wixproj.BindOutputsFileListnull.txt
+obj\Debug\MogeritzSoundboard.Setup.wixproj.BindBuiltOutputsFileListnull.txt
